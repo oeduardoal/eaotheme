@@ -25,7 +25,7 @@
 	function load_assets() {
 	
 		// My LIB
-		// wp_enqueue_script( 'app_js',  assetsurl . '/assets/js/m/jq.min.js');
+		wp_enqueue_script( 'app_js',  assetsurl . '/assets/js/index.js');
 		// wp_enqueue_style( 'app_css', assetsurl . '/assets/css/main.min.css');
 
 	}
