@@ -1,11 +1,104 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@font-face {
+    font-family: "Blanka";
+    src: url("../fonts/Blanka-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "DINPro";
+    src: url("../fonts/DINPro.otf") format("opentype");
+}
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+$cinza: #747474;
+$cinza-claro: #757575;
+$verde-claro: #00FF79;
 html{
     background: url('../img/background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: relative;
+}
+body{
+    background: transparent;
 }
 
-#logos{
-    
+header{
+    padding-top: 2.5rem;
 }
+
+    #logos{
+        margin: 0 auto;
+        .logos_diflen{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            .logo_diflen_cinza{
+                width: 100%;
+                position: absolute;
+                text-align: center;
+            }
+            .logo_diflen{
+                img{
+                    width: 46rem;
+                }
+                img.logo_diflen__verde{
+                    margin-left: 10px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    #data_evento{
+        margin-top: 1rem;
+        h2{
+            font-family: "DINPro";
+            font-size: 30px;
+            font-weight: 500;
+            color: $cinza;
+            letter-spacing: .8rem;
+            text-align: center;
+        }
+    }
+
+    #palestrantes{}
+    #loading{}
+    #local{
+        text-align: center;
+        h5{
+            font-size: 20px;
+            font-family: "DINPro";
+            color: $cinza-claro;
+            letter-spacing: .6rem;
+        }
+        h5 span:nth-child(2n+2){
+            font-weight: 600;
+        }            
+        
+    }
+    #inscrevase{
+        position: fixed;
+        bottom: 0;
+        .btn{
+            &:hover{
+                color: #FFF;
+                border-color: $verde-claro;
+                background-color: $verde-claro;
+            }
+            background: $cinza;
+            border-color: $cinza;
+            color: #FFF;
+            font-weight: 600;
+            letter-spacing: 4rem;
+            border-radius: 0;
+            border-width: 4px;
+            font-size: 32px;
+        }
+    }
+
+    #svg_font{
+        font-family: "Blanka";
+        font-size: 100px;
+    }
