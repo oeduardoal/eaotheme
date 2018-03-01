@@ -72,6 +72,6 @@
 	</section>
 	<section class="container-fluid" id="inscrevase">
 		<section class="row">
-			<a href="" class="btn btn-outline-success btn-block">INSCREVA-SE</a>
+			<a href="https://www.eventbrite.com.br/e/diflen-conference-fortaleza-2018-tickets-43478596653" target="_blank" class="btn btn-outline-success btn-block">INSCREVA-SE</a>
 		</section>
 	</section>
