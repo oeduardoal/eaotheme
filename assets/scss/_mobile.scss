@@ -1,0 +1,18 @@
+@media screen and (max-width: 700px){
+    .logo_diflen{
+        img{
+            width: 20rem;
+        }
+    }
+    #data_evento{
+        h2{
+            font-size: 14px;
+        }
+    }
+    #inscrevase{
+        .btn{
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+    }
+}

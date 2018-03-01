@@ -31,7 +31,28 @@
 		</section>
 	</header>
 	<section class="container-fluid" id="palestrantes">
-		<section class="row">
+		<section class="d-flex justify-content-center bd-highlight mb-3">
+			<?php
+				$palestrantes = array(
+					1 => array("class" => "andres"),
+					2 => array("class" => "lipao"),
+					3 => array("class" => "teo"),
+					4 => array("class" => "luma"),
+					5 => array("class" => "rebeca"),
+					6 => array("class" => "sandro"),
+				);
+				foreach ($palestrantes as $key => $value):
+					$class = $value['class'];
+					$src = assetsurl . "/dist/imgs/0".$key."-min.png"; 
+			?>
+			<section class="palestrante__perfil <?= $class ?>">
+					<a href="#">
+						<img src="<?= $src ?>" alt="">
+					</a>
+			</section>
+			<?php
+				endforeach;
+			?>
 		</section>
 	</section>
 	<section class="container-fluid" id="loading">

@@ -48,7 +48,7 @@ module.exports = {
             loader: 'url-loader?limit=25000',
             query: {
               limit: 10000,
-              name: '[name].[hash:8].[ext]'
+              name: 'imgs/[name].[hash:8].[ext]'
             }
           },
         ]
