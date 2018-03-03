@@ -31,7 +31,7 @@
 		</section>
 	</header>
 	<section class="container-fluid" id="palestrantes">
-		<section class="d-flex justify-content-center bd-highlight mb-3">
+		<section class=" d-flex d-sm-flex justify-content-sm-center justify-content-center flex-sm-row flex-column ">
 			<?php
 				$palestrantes = array(
 					1 => array("class" => "andres"),
@@ -56,8 +56,14 @@
 		</section>
 	</section>
 	<section class="container-fluid" id="loading">
-		<section class="row">
-		</section>
+		<div class="d-flex justify-content-center flex-row">
+			<div class="col-md-5 col-sm-12">
+				<h3>LOADING... PLEASE WAIT</h3>
+				<div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section class="container-fluid" id="local">
 		<section class="row">

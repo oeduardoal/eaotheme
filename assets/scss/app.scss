@@ -67,6 +67,8 @@ header{
     }
 
     #palestrantes{
+        margin: 0px;
+        padding: 0px;
         margin-top: 2rem;
         .palestrante__perfil{
             img{
@@ -92,10 +94,9 @@ header{
         }
         .luma{
             margin-top: 1.5rem;
-            margin-right: -0.7rem;
         }
         .teo{
-            margin-right: -2rem;
+            margin-right: 0rem;
             img{
                 width: 17rem;
             }
@@ -107,11 +108,25 @@ header{
             }
         }
     }
-    #loading{}
+    #loading{
+        margin-bottom: 4rem;
+        .progress-bar{
+            background-color: $verde-claro;
+        }
+        h3{
+            font-family: "DINPro";
+            font-size: 20px;
+            font-weight: 500;
+            color: $cinza;
+            letter-spacing: .8rem;
+            text-align: center;
+        }
+    }
     #local{
         text-align: center;
+        margin-bottom: 5rem;
         h5{
-            font-size: 20px;
+            font-size: 25px;
             font-family: "DINPro";
             color: $cinza-claro;
             letter-spacing: .6rem;
@@ -139,10 +154,6 @@ header{
             border-width: 4px;
             font-size: 32px;
         }
-    }
-
-    #svg_font{
-        
     }
 
     @import 'mobile';
