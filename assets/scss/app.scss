@@ -28,7 +28,7 @@ body{
 }
 
 header{
-    padding-top: 2.5rem;
+    padding-top: 2rem;
 }
 
     #logos{
@@ -46,7 +46,7 @@ header{
     }
     .logo_diflen{
         img{
-            width: 46rem;
+            width: 40rem;
         }
         img.logo_diflen__verde{
             margin-left: 10px;
@@ -69,7 +69,6 @@ header{
     #palestrantes{
         margin: 0px;
         padding: 0px;
-        margin-top: 2rem;
         .palestrante__perfil{
             img{
                 width: 13rem;
@@ -109,7 +108,7 @@ header{
         }
     }
     #loading{
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         .progress-bar{
             background-color: $verde-claro;
         }
@@ -124,9 +123,8 @@ header{
     }
     #local{
         text-align: center;
-        margin-bottom: 5rem;
         h5{
-            font-size: 25px;
+            font-size: 20px;
             font-family: "DINPro";
             color: $cinza-claro;
             letter-spacing: .6rem;
