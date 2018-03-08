@@ -132,6 +132,14 @@ header{
         h5 span:nth-child(2n+2){
             font-weight: 600;
         }            
+
+        span{
+            a{
+                color: $cinza;
+                font-style: normal;
+                text-decoration: none;
+            }
+        }
         
     }
     #inscrevase{
