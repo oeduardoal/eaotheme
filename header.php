@@ -49,7 +49,7 @@
 					3 => array("class" => "teo"),
 					4 => array("class" => "luma"),
 					5 => array("class" => "rebeca"),
-					6 => array("class" => "sandro"),
+// 					6 => array("class" => "sandro"),
 				);
 				foreach ($palestrantes as $key => $value):
 					$class = $value['class'];
