@@ -83,7 +83,8 @@
 					<span>LOCAL : </span>
 					<span>AV.RECREIO, 840 - LAGOA REDONDA</span>
 					<br/>
-					<span style="padding-top: 1rem;">
+					<br/>
+					<span style="padding-top: 1rem;" class="travmor">
 						PRECISA DE HOSPEDAGEM? PROCURE A <strong> <a target="_new" href="https://instagram.com/travmor.company">TRAVMOR</a> <a href="tel:085981890990">(85) 98189-0990</a></strong> 
 					</span>
 				</h5>
