@@ -31,134 +31,180 @@ header{
     padding-top: 2rem;
 }
 
-    #logos{
-        margin: 0 auto;
-        .logos_diflen{
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            .logo_diflen_cinza{
-                width: 100%;
-                position: absolute;
-                text-align: center;
-            }
+    #menu{
+        max-width: 1400px;
+        .logo img{
+            padding-top: 7px;
+            width: 10rem;
         }
-    }
-    .logo_diflen{
-        img{
-            width: 35rem;
-        }
-        img.logo_diflen__verde{
-            margin-left: 10px;
-            margin-top: 5px;
-        }
-    }
+        ul{
+            display: inline-flex;
+            padding: 0px;
+            margin: 0px;
+            li{
+                margin-top: 2.5rem;
+                list-style: none;
+                a{
+                    padding: 2rem 2rem;
+                    text-transform: uppercase;
+                    color: #747474;
+                    transition: all .1s ease-in;
+                    &:hover{
+                        text-decoration: none;
+                        color: #00FF79;
+                    }
+                }
+                &:nth-child(2n+1) {
+                    a{
+                        border-top: solid 8px #00FF79;
+                        transition: all .1s linear;
+                        &:hover{
+                            color: #00FF79;
+                        }
+                    }
+                }
+                &:nth-child(2n+2) {
+                    a{
+                        border-bottom: solid #00FF79 8px;
+                        &:hover{
+                        }
+                    }
+                }
+                &:last-child(){
+                    a{
+                        &:hover{
 
-    #data_evento{
-        margin-top: 1rem;
-        h2{
-            font-family: "DINPro";
-            font-size: 30px;
-            font-weight: 500;
-            color: $cinza;
-            letter-spacing: .8rem;
-            text-align: center;
-        }
-    }
+                        }
+                    }
 
-    #palestrantes{
-        margin: 0px;
-        padding: 0px;
-        .palestrante__perfil{
-            img{
-                width: 12rem;
-            }
-        }
-        .andres{
-            margin-top: .6rem;
-            margin-right: 1rem;
-        }
-        .lipao{
-            margin-top: .5rem;
-            img{
-                width: 11rem;
-            }
-        }
-        .rebeca{
-            margin-top: .5rem;
-            margin-right: 1.5rem;
-            img{
-                width: 11rem;
-            }
-        }
-        .luma{
-            margin-top: 1.5rem;
-        }
-        .teo{
-            img{
-                width: 17rem;
-            }
-        }
-        .sandro{
-            margin-top: .2rem;
-            img{
-                width: 17rem;
+                }
             }
         }
     }
-    #loading{
-        margin-bottom: 2rem;
-        .progress-bar{
-            background-color: $verde-claro;
-        }
-        h3{
-            font-family: "DINPro";
-            font-size: 20px;
-            font-weight: 500;
-            color: $cinza;
-            letter-spacing: .8rem;
-            text-align: center;
-        }
+    #banner{
+        margin-top: .6rem;
     }
-    #local{
-        text-align: center;
-        h5{
-            font-size: 20px;
-            font-family: "DINPro";
-            color: $cinza-claro;
-            letter-spacing: .6rem;
+    #video{
+        iframe{
+            width: 80%;
+            height: 600px;
+            margin: 0 auto;
         }
-        h5 span:nth-child(2n+2){
-            font-weight: 600;
-        }            
-
-        span{
-            a{
-                color: $cinza;
-                font-style: normal;
-                text-decoration: none;
-            }
-        }
-        
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
-    #inscrevase{
-        position: fixed;
-        bottom: 0;
-        .btn{
-            &:hover{
+    #mensagem-dcf{
+        background: url('../img/site/banner-texto.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+        height:75vh;
+        min-height:100%;
+        .row{
+            padding: 0rem 4rem;
+            height: 100%;
+            p{
+                line-height: 2rem;
+                font-family: DINPro;
+                font-size: 20px;
                 color: #FFF;
-                border-color: $verde-claro;
-                background-color: $verde-claro;
             }
-            background: #FFF;
-            border-color: $verde-claro;
-            color: $verde-claro;
-            font-weight: 600;
-            letter-spacing: 4rem;
-            border-radius: 0;
-            border-width: 4px;
-            font-size: 32px;
         }
     }
+    #contagem{
+            #loading{
+                margin-bottom: 2rem;
+                .progress-bar{
+                    background-color: $verde-claro;
+                }
+        }
+    }
+    #detalhes{
+        padding-top: 4rem;
+        padding-bottom: 10rem;
+    }
 
-    @import 'mobile';
+    #convidados{
+        #palestrantes{
+            columns: 4;
+            max-width: 80%;
+            margin: 0 auto;
+            .palestrante__perfil{
+                img{
+                    width: 10rem;
+                }
+                &.andre{
+                    img{
+                        width: 12rem;
+                    }
+                }
+                &.teo{
+                    img{
+                        width: 15rem;
+                    }
+                }
+                &.luma{
+                    img{
+                        width: 12rem;
+                    }
+                }
+                
+                &.rebeca{
+                    img{
+                        margin-top: 20px;
+                        width: 10rem;
+                    }
+                }
+                &.alisio{
+                    img{
+                        width: 12rem;
+                    }
+                }
+            }
+        }
+    }
+    #bandas{
+        background: url('../img/site/banner-bandas.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+        height:75vh;
+        min-height:100%;
+        .owl-lazy{
+            width: 20rem;
+        }
+    }
+    #perguntas{
+        margin-top: 8rem;
+        padding-bottom: 4rem;
+        .row{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        .item{
+            text-align: center;
+        }
+    }
+    #caravanas{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    #fotos-conferencia{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        #fotos{
+            margin-top: 4rem;
+            display: inline-block;
+            columns: 5;
+            img{
+                margin: 0px;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    
+@import 'mobile';

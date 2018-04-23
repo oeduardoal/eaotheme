@@ -8381,102 +8381,125 @@ body {
 header {
   padding-top: 2rem; }
 
-#logos {
-  margin: 0 auto; }
-  #logos .logos_diflen {
-    margin: 0;
-    padding: 0;
-    text-align: center; }
-    #logos .logos_diflen .logo_diflen_cinza {
-      width: 100%;
-      position: absolute;
-      text-align: center; }
+#menu {
+  max-width: 1400px; }
+  #menu .logo img {
+    padding-top: 7px;
+    width: 10rem; }
+  #menu ul {
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px; }
+    #menu ul li {
+      margin-top: 2.5rem;
+      list-style: none; }
+      #menu ul li a {
+        padding: 2rem 2rem;
+        text-transform: uppercase;
+        color: #747474;
+        transition: all .1s ease-in; }
+        #menu ul li a:hover {
+          text-decoration: none;
+          color: #00FF79; }
+      #menu ul li:nth-child(2n+1) a {
+        border-top: solid 8px #00FF79;
+        transition: all .1s linear; }
+        #menu ul li:nth-child(2n+1) a:hover {
+          color: #00FF79; }
+      #menu ul li:nth-child(2n+2) a {
+        border-bottom: solid #00FF79 8px; }
 
-.logo_diflen img {
-  width: 35rem; }
+#banner {
+  margin-top: .6rem; }
 
-.logo_diflen img.logo_diflen__verde {
-  margin-left: 10px;
-  margin-top: 5px; }
+#video {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  #video iframe {
+    width: 80%;
+    height: 600px;
+    margin: 0 auto; }
 
-#data_evento {
-  margin-top: 1rem; }
-  #data_evento h2 {
-    font-family: "DINPro";
-    font-size: 30px;
-    font-weight: 500;
-    color: #747474;
-    letter-spacing: .8rem;
-    text-align: center; }
+#mensagem-dcf {
+  background: url(imgs/banner-texto.b3c1e389.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 75vh;
+  min-height: 100%; }
+  #mensagem-dcf .row {
+    padding: 0rem 4rem;
+    height: 100%; }
+    #mensagem-dcf .row p {
+      line-height: 2rem;
+      font-family: DINPro;
+      font-size: 20px;
+      color: #FFF; }
 
-#palestrantes {
-  margin: 0px;
-  padding: 0px; }
-  #palestrantes .palestrante__perfil img {
-    width: 12rem; }
-  #palestrantes .andres {
-    margin-top: .6rem;
-    margin-right: 1rem; }
-  #palestrantes .lipao {
-    margin-top: .5rem; }
-    #palestrantes .lipao img {
-      width: 11rem; }
-  #palestrantes .rebeca {
-    margin-top: .5rem;
-    margin-right: 1.5rem; }
-    #palestrantes .rebeca img {
-      width: 11rem; }
-  #palestrantes .luma {
-    margin-top: 1.5rem; }
-  #palestrantes .teo img {
-    width: 17rem; }
-  #palestrantes .sandro {
-    margin-top: .2rem; }
-    #palestrantes .sandro img {
-      width: 17rem; }
-
-#loading {
+#contagem #loading {
   margin-bottom: 2rem; }
-  #loading .progress-bar {
+  #contagem #loading .progress-bar {
     background-color: #00FF79; }
-  #loading h3 {
-    font-family: "DINPro";
-    font-size: 20px;
-    font-weight: 500;
-    color: #747474;
-    letter-spacing: .8rem;
+
+#detalhes {
+  padding-top: 4rem;
+  padding-bottom: 10rem; }
+
+#convidados #palestrantes {
+  columns: 4;
+  max-width: 80%;
+  margin: 0 auto; }
+  #convidados #palestrantes .palestrante__perfil img {
+    width: 10rem; }
+  #convidados #palestrantes .palestrante__perfil.andre img {
+    width: 12rem; }
+  #convidados #palestrantes .palestrante__perfil.teo img {
+    width: 15rem; }
+  #convidados #palestrantes .palestrante__perfil.luma img {
+    width: 12rem; }
+  #convidados #palestrantes .palestrante__perfil.rebeca img {
+    margin-top: 20px;
+    width: 10rem; }
+  #convidados #palestrantes .palestrante__perfil.alisio img {
+    width: 12rem; }
+
+#bandas {
+  background: url(imgs/banner-bandas.234a1699.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 75vh;
+  min-height: 100%; }
+  #bandas .owl-lazy {
+    width: 20rem; }
+
+#perguntas {
+  margin-top: 8rem;
+  padding-bottom: 4rem; }
+  #perguntas .row {
+    max-width: 80%;
+    margin: 0 auto; }
+  #perguntas .item {
     text-align: center; }
 
-#local {
-  text-align: center; }
-  #local h5 {
-    font-size: 20px;
-    font-family: "DINPro";
-    color: #757575;
-    letter-spacing: .6rem; }
-  #local h5 span:nth-child(2n+2) {
-    font-weight: 600; }
-  #local span a {
-    color: #747474;
-    font-style: normal;
-    text-decoration: none; }
+#caravanas {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
 
-#inscrevase {
-  position: fixed;
-  bottom: 0; }
-  #inscrevase .btn {
-    background: #FFF;
-    border-color: #00FF79;
-    color: #00FF79;
-    font-weight: 600;
-    letter-spacing: 4rem;
-    border-radius: 0;
-    border-width: 4px;
-    font-size: 32px; }
-    #inscrevase .btn:hover {
-      color: #FFF;
-      border-color: #00FF79;
-      background-color: #00FF79; }
+#fotos-conferencia {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+  #fotos-conferencia #fotos {
+    margin-top: 4rem;
+    display: inline-block;
+    columns: 5; }
+    #fotos-conferencia #fotos img {
+      margin: 0px;
+      margin-bottom: 1rem; }
 
 @media screen and (max-width: 700px) {
   .logo_diflen img {

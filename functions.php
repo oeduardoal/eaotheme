@@ -26,7 +26,9 @@
 	
 		// My LIB
 		wp_enqueue_script( 'app_js',  assetsurl . '/dist/bundle.js', '', '',true);
+		wp_enqueue_script( 'owl.carousel.js',  'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/owl.carousel.min.js','','',true);
 		wp_enqueue_style( 'app_css', assetsurl . '/dist/bundle.css');
+		wp_enqueue_style( 'owl.carousel.css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.carousel.min.css');
 
 	}
 	add_action( 'wp_enqueue_scripts', 'load_assets' );
