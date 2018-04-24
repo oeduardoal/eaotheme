@@ -1,8 +1,8 @@
 <section id="contagem" class="container">
     <div class="row">
-        <div class="col">
+        <div class="col text-right">
             <div class="col">
-                <div id="contagem-regressiva">
+                <div id="contagem-regressiva" class="font-weight-bold">
                     <span>
                         00 Dias 00 Horas 00 Minutos
                     </span>
@@ -17,16 +17,16 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="col">
-                <span id="loading-please">
-                    Loading... Please Wait
-                </span>
-            </div>
-            <div class="col" id="loading">
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 45%"></div>
+        <div class="col border-left">
+            <div class="row h-100 align-items-center">
+                <div class="col">
+                    <span id="loading-please">
+                        Loading... Please Wait
+                    </span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 45%"></div>
+                    </div>
                 </div>
             </div>
         </div>

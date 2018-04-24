@@ -8438,9 +8438,25 @@ header {
       font-size: 20px;
       color: #FFF; }
 
-#contagem #loading {
-  margin-bottom: 2rem; }
-  #contagem #loading .progress-bar {
+#contagem {
+  padding-top: 4rem; }
+  #contagem .border-left {
+    border-left: solid #757575 3px !important; }
+  #contagem span {
+    color: #757575; }
+  #contagem #contagem-regressiva span {
+    font-size: 37px; }
+  #contagem #datahora-evento span {
+    letter-spacing: 2px;
+    font-size: 37px; }
+  #contagem #loading-please {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 12px;
+    font-size: 22px; }
+  #contagem #loading {
+    margin-bottom: 2rem; }
+  #contagem .progress-bar {
     background-color: #00FF79; }
 
 #detalhes {

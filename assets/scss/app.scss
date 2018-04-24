@@ -114,11 +114,35 @@ header{
         }
     }
     #contagem{
-            #loading{
-                margin-bottom: 2rem;
-                .progress-bar{
-                    background-color: $verde-claro;
-                }
+        padding-top: 4rem;
+        .border-left{
+            border-left: solid #757575 3px !important;
+        }
+        span{
+            color: #757575;
+        }
+        #contagem-regressiva{
+            span{
+                font-size: 37px;
+            }    
+        }
+        #datahora-evento{
+            span{
+                letter-spacing: 2px;
+                font-size: 37px;
+            }
+        }
+        #loading-please{
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 12px;
+            font-size: 22px;
+        }
+        #loading{
+            margin-bottom: 2rem;
+        }
+        .progress-bar{
+            background-color: $verde-claro;
         }
     }
     #detalhes{
