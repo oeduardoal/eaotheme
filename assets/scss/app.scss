@@ -7,6 +7,11 @@
     font-family: "DINPro";
     src: url("../fonts/DINPro.otf") format("opentype");
 }
+
+@font-face {
+    font-family: "DINPro Black";
+    src: url("../fonts/DINPro-Black.otf") format("opentype");
+}
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 $cinza: #747474;
@@ -30,7 +35,9 @@ body{
 header{
     padding-top: 2rem;
 }
-
+    .border-dcf{
+        border-bottom: solid #00FF79 3px;
+    }
     #menu{
         max-width: 1400px;
         .logo img{
@@ -83,6 +90,16 @@ header{
     }
     #banner{
         margin-top: .6rem;
+        #banner-text-1{
+            color: #FFF;
+            font-size: 78px;
+            font-family: "DINPro";
+            padding: 0 10rem;
+            span{
+                background-color: #00FF79;
+                color: #000;
+            }
+        }
     }
     #video{
         iframe{
@@ -114,7 +131,9 @@ header{
         }
     }
     #contagem{
-        padding-top: 4rem;
+        padding: 8rem 0rem;
+        padding-bottom: 4rem 0rem;
+        font-family: "DINPro";
         .border-left{
             border-left: solid #757575 3px !important;
         }
@@ -123,7 +142,8 @@ header{
         }
         #contagem-regressiva{
             span{
-                font-size: 37px;
+                font-family: "DINPro Black";
+                font-size: 34px;
             }    
         }
         #datahora-evento{
@@ -146,15 +166,29 @@ header{
         }
     }
     #detalhes{
-        padding-top: 4rem;
+        padding-top: 8rem;
         padding-bottom: 10rem;
+        font-family: "DINPro";
+        color: #747474;
+        p{
+            font-size: 17px;
+        }
+        #detalhes-title{
+            font-family: "DINPro Black";
+            font-weight: 900;
+            color: #747474;
+        }
     }
 
     #convidados{
+        color: #747474;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         #palestrantes{
             columns: 4;
             max-width: 80%;
             margin: 0 auto;
+            margin-top: 5rem;
             .palestrante__perfil{
                 img{
                     width: 10rem;
@@ -188,7 +222,20 @@ header{
                 }
             }
         }
+        #convidados-title{
+            font-weight: 800;
+            font-family: "DINPro Black";
+        }
+        #convidados-subtitle{
+            font-family: "DINPro";
+            font-size: 22px;
+            letter-spacing: 2px;
+        }
     }
+    #bandas-title{
+        color: #747474;
+        margin-top: 4rem;
+    }   
     #bandas{
         background: url('../img/site/banner-bandas.png') no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -198,8 +245,12 @@ header{
         position: relative;
         height:75vh;
         min-height:100%;
+        margin-top: 5rem;
         .owl-lazy{
             width: 20rem;
+        }
+        .owl-carousel.owl-drag .owl-item{
+            text-align: -webkit-center;
         }
     }
     #perguntas{
@@ -212,13 +263,52 @@ header{
         .item{
             text-align: center;
         }
+        color: #747474;
+        #perguntas-title{
+            font-family: "DINPro Black";
+            text-transform: uppercase;
+        }
+        #perguntas-response{
+            margin-top: 1rem;
+            font-family: "DINPro";
+            font-size: 20px;
+        }
+        .first{
+            font-size: 40px;
+            border: none;
+            border-bottom: solid #00FF79 3px;
+            border-block-start-width: 10px
+        }
     }
     #caravanas{
+        color: #747474;
         padding-top: 4rem;
         padding-bottom: 4rem;
+        p{
+            font-size: 20px;
+        }
+    }
+    #hospedagem{
+        padding-top: 8rem;
+        color: #747474;
+        #hospedagem-subtitle{
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        .img-travmor{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 40rem;
+        }
+        #lamartine{
+            span{
+                font-size: 20px;
+            }
+        }
     }
     #fotos-conferencia{
-        margin-top: 4rem;
+        color: #747474;
+        margin-top: 8rem;
         margin-bottom: 4rem;
         #fotos{
             margin-top: 4rem;
@@ -227,8 +317,29 @@ header{
             img{
                 margin: 0px;
                 margin-bottom: 1rem;
+                width: 12rem;
             }
         }
     }
-    
+    #contato{
+        color: #000;
+        h2{
+            font-family: "DINPro Black";
+        }
+        span{
+            font-size: 20px;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+            margin-top: 10px;
+            li{
+                margin-right: 10px;
+                display: inline-block;
+            }
+            list-style: none;
+        }
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
 @import 'mobile';

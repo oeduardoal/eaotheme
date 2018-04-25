@@ -1,18 +1,18 @@
 <div id="fotos-conferencia" class="container">
     <div class="row">
         <div class="col text-center">
-            <h5 class="font-weight-bold">
+            <h2 class="font-weight-bold">
                 FOTOS DA CONFERÊNCIA DE 2017
-            </h5>
+            </h2>
         </div>
     </div>
     <div class="row">
         <div class="col text-center">
             <div id="fotos">
                 <?php
-                    for ($i=0; $i < 10; $i++):
+                    for ($i=1 ; $i < 11; $i++):
                 ?>
-                    <img src="//placehold.it/200x200" alt="">
+                    <img src="<?php echo assetsurl . "/assets/img/site/" . $i . ".png"; ?>" alt="">
                 <?php endfor; ?>
             </div>
         </div>

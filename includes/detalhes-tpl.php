@@ -6,20 +6,22 @@
         </div>
         <div class="col text-left">
             <div class="row h-100 align-items-center">
-                <h1 class="detalhes-title">DETALHES DO EVENTO: </h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et earum ab blanditiis velit dolor excepturi itaque magnam temporibus,
-                    fugiat odio voluptates quisquam ex consequatur debitis. Odio ullam doloremque sapiente officiis.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam iusto, mollitia eligendi esse nulla rerum soluta neque
-                    libero nemo consequatur fuga laborum! Facilis enim tempore eveniet, aliquam accusamus rem.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quaerat cupiditate explicabo. Exercitationem harum doloremque
-                    error, quidem voluptatibus inventore consequuntur ipsam, suscipit optio tempora fuga omnis quas laborum,
-                    veritatis iure.
-                </p>
+                <div>
+                    <h1 id="detalhes-title">DETALHES DO EVENTO: </h1>
+                    <p>
+                        Local: DIFLEN Fortaleza – Avenida Recreio, 840 – Lagoa Redonda.
+                        <br> Data: 31 de maio, 1 e 2 de junho de 2018
+                    </p>
+
+                    <p>
+                        Ingressos: Os ingressos estão sendo vendidos pela plataforma Eventbrite e nos cultos da Igreja da Paz Fortaleza. Seu ingresso
+                        será enviado para o e-mail fornecido durante a reserva.
+                    </p>
+                    <p>
+                        Credenciamento: Chegue cedo para evitar filas e atrasos no dia do evento e lembre-se de trazer seu ingresso digital impresso
+                        com o QR Code nítido.
+                    </p>
+                </div>
             </div>
         </div>
     </div>

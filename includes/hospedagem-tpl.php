@@ -1,8 +1,8 @@
 <div id="hospedagem" class="container">
     <div class="row h-100 align-items-center">
         <div class="col text-center">
-            <h5 class="font-weight-bold">HOSPEDAGEM:</h5>
-            <small class="border-dcf">VOCÊ PROCURA: </small>
+            <h2 class="font-weight-bold" id="hospedagem-title">HOSPEDAGEM:</h2>
+            <small class="border-dcf" id="hospedagem-subtitle">VOCÊ PROCURA: </small>
             <div class="row">
                 <div class="col">
                     <picture>
@@ -12,7 +12,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <section>
+                    <section id="lamartine">
                         <span class="font-weight-bold">
                             LAMARTINE:
                         </span>

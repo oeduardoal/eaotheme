@@ -1,5 +1,5 @@
 <section id="mensagem-dcf" class="container-fluid">
-    <div class="row align-items-center">
+    <div class="row align-items-center scroll-reveal">
         <div class="col">
             <p>
                 Em meio a incredulidade que toma conta da terra, corrupção, pobreza, violência e mentiras, Deus está levantando uma geração

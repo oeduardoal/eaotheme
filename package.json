@@ -29,7 +29,9 @@
     "owl.carousel": "^2.3.3",
     "popper": "^1.0.0",
     "popper.js": "^1.13.0",
-    "tether": "^1.4.1"
+    "scrollreveal": "^3.4.0",
+    "tether": "^1.4.1",
+    "typeit": "^5.9.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

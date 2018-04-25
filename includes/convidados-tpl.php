@@ -1,10 +1,10 @@
 <div class="container" id="convidados">
     <div class="row text-center">
         <div class="col" id="convidados-header">
-            <h5 class="font-weight-bold" id="convidados-title">
+            <h1 class="font-weight-bold" id="convidados-title">
                 CONVIDADOS
-            </h5>
-            <small id="convidados-subtitle">
+            </h1>
+            <small class="border-dcf" id="convidados-subtitle">
                 PRELETOES
             </small>
         </div>

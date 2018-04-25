@@ -8,22 +8,22 @@
         <section class="col col-lg-8 text-">
             <ul>
                 <li>
-                    <a href="#">Sobre</a>
+                    <a href="#mensagem-dcf">Sobre</a>
                 </li>
                 <li>
-                    <a href="#">Local</a>
+                    <a href="#detalhes">Local</a>
                 </li>
                 <li>
-                    <a href="#">Convidados</a>
+                    <a href="#convidados">Convidados</a>
                 </li>
                 <li>
-                    <a href="#">Hospedagem</a>
+                    <a href="#hospedagem">Hospedagem</a>
                 </li>
                 <li>
                     <a href="#">Contato</a>
                 </li>
                 <li>
-                    <a href="#">Inscreva-se</a>
+                    <a href="https://www.eventbrite.com.br/e/diflen-conference-fortaleza-2018-tickets-43478596653" target="_new">Inscreva-se</a>
                 </li>
             </ul>
         </section>
