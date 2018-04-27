@@ -1,24 +1,25 @@
 @media screen and (max-width: 700px){
-    .logo_diflen{
-        img{
-            width: 20rem;
-        }
-    }
-    #data_evento{
-        h2{
-            font-size: 14px;
-        }
-    }
-    #inscrevase{
-        .btn{
+
+}
+@media screen and (max-width: 1000px){
+    #banner{
+        #banner-text-1{
             font-size: 20px;
-            letter-spacing: 5px;
         }
     }
-    #local{
-        margin-bottom: 4rem;
+        
+    #fotos-conferencia{
+        #fotos{
+            columns: 2;
+        }
     }
-    section.palestrante__perfil{
-        text-align: center !important;
+        
+}
+@media screen and (max-width: 1080px){
+    #mensagem-dcf{
+        .row{
+            max-width: 60%;
+            margin: 0 auto;
+        }
     }
 }
