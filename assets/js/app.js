@@ -70,17 +70,27 @@ $(document).ready(() => {
 
   $("#bandas .owl-carousel").owlCarousel({
     lazyLoad: true,
-    items: 3,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 3500
+    autoplayTimeout: 3500,
+    responsive : {
+      0: {
+        items: 1,
+      },
+      500: {
+        items: 2,
+      },
+      1024: {
+        items: 3,
+      }
+    }
   });
 
   $("#perguntas .owl-carousel").owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 6000,
     dots: true
   });
 

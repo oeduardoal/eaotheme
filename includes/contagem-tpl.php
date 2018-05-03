@@ -1,6 +1,6 @@
 <section id="contagem" class="container">
     <div class="row">
-        <div class="col text-right">
+        <div class="col-sm-12 col-lg-6 text-right">
             <div class="col">
                 <div id="contagem-regressiva" class="font-weight-bold">
                     <span id="contagem-regressiva-js">
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        <div class="col border-left">
+        <div class="col-sm-12 col-lg-6 border-left">
             <div class="row h-100 align-items-center">
                 <div class="col">
                     <span id="loading-please">

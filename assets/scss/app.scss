@@ -23,13 +23,12 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position: relative;
     height:100%;
     min-height:100%;
 }
 body{
     background: transparent;
-    min-height:100%;
+    min-height: 100%;
 }
 
 header{
@@ -40,50 +39,50 @@ header{
     }
     #menu{
         max-width: 1400px;
-        position: relative;
-        #navbar{
-            position: absolute;
-            right: 0;
-        }
-        .logo img{
+        .logo img{  
             padding-top: 7px;
             width: 10rem;
         }
         
         .navbar-nav{
-            a{
-                padding: 2rem 2rem;
-                text-transform: uppercase;
-                color: #747474;
-                transition: all .1s ease-in;
-                &:hover{
-                    text-decoration: none;
-                    color: #00FF79;
-                }
-                &:nth-child(2n+1) {
-                    border-top: solid 8px #00FF79;
-                    transition: all .1s linear;
+            li{
+                a{
+                    padding: 2rem 2rem;
+                    text-transform: uppercase;
+                    color: #747474;
+                    transition: all .1s ease-in;
                     &:hover{
+                        text-decoration: none;
                         color: #00FF79;
                     }
                 }
-                &:nth-child(2n+2) {
-                    margin-top: 10px;
-                    border-bottom: solid #00FF79 8px;
+                &:nth-child(2n+1) {
+                    a{
+                        border-top: solid 8px #00FF79;
+                        transition: all .1s linear;
+                        &:hover{
+                            color: #00FF79;
+                        }
+                    }
+                    
                 }
-                
+                &:nth-child(2n+2) {
+                    a{
+                        margin-top: 10px;
+                        border-bottom: solid #00FF79 8px;
+                    }
+                }
             }
             
         }
     }
     #banner{
-        position: relative;
         margin-top: .6rem;
         #banner-text-1{
             color: #FFF;
             font-size: 78px;
             font-family: "DINPro";
-            padding: 0 10rem;
+            width: 80%;
             span{
                 background-color: #00FF79;
                 color: #000;
@@ -91,7 +90,6 @@ header{
         }
     }
     #video{
-        position: relative;
         iframe{
             width: 80%;
             height: 600px;
@@ -101,18 +99,16 @@ header{
         padding-bottom: 4rem;
     }
     #mensagem-dcf{
-        position: relative;
         background: url('../img/site/banner-texto.png') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        position: relative;
-        height:75vh;
         min-height:100%;
+        padding: 2rem 0;
         .row{
-            padding: 0rem 4rem;
-            height: 100%;
+            width: 95%;
+            margin: 0 auto;
             p{
                 line-height: 2rem;
                 font-family: DINPro;
@@ -122,7 +118,6 @@ header{
         }
     }
     #contagem{
-        position: relative;
         padding: 8rem 0rem;
         padding-bottom: 4rem 0rem;
         font-family: "DINPro";
@@ -158,8 +153,7 @@ header{
         }
     }
     #detalhes{
-        position: relative;        
-        padding-top: 8rem;
+        padding-top: 4rem;
         padding-bottom: 10rem;
         font-family: "DINPro";
         color: #747474;
@@ -174,7 +168,6 @@ header{
     }
 
     #convidados{
-        position: relative;
         color: #747474;
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -231,13 +224,11 @@ header{
         margin-top: 4rem;
     }   
     #bandas{
-        position: relative;
         background: url('../img/site/banner-bandas.png') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        position: relative;
         height:75vh;
         min-height:100%;
         margin-top: 5rem;
@@ -249,11 +240,9 @@ header{
         }
     }
     #perguntas{
-        position: relative;        
         margin-top: 8rem;
         padding-bottom: 4rem;
         .row{
-            max-width: 80%;
             margin: 0 auto;
         }
         .item{
@@ -277,7 +266,6 @@ header{
         }
     }
     #caravanas{
-        position: relative;        
         color: #747474;
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -286,7 +274,6 @@ header{
         }
     }
     #hospedagem{
-        position: relative;        
         padding-top: 8rem;
         color: #747474;
         #hospedagem-subtitle{
@@ -296,7 +283,7 @@ header{
         .img-travmor{
             margin-top: 2rem;
             margin-bottom: 2rem;
-            width: 40rem;
+            width: 100%;
         }
         #lamartine{
             span{
@@ -305,23 +292,21 @@ header{
         }
     }
     #fotos-conferencia{
-        position: relative;        
         color: #747474;
         margin-top: 8rem;
         margin-bottom: 4rem;
         #fotos{
+            .col-sm-12.col-md-2.col-lg-3{
+                padding: 0px;
+            }
             margin-top: 4rem;
             display: inline-block;
-            columns: 5;
             img{
-                margin: 0px;
-                margin-bottom: 1rem;
-                width: 12rem;
+                width: 100%;
             }
         }
     }
     #contato{
-        position: relative;        
         color: #000;
         h2{
             font-family: "DINPro Black";

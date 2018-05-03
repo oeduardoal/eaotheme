@@ -1,25 +1,131 @@
-@media screen and (max-width: 700px){
-
-}
-@media screen and (max-width: 1000px){
+@media (max-width: 1280px) { 
+    
+    #menu{
+        padding: 0px;
+        .navbar-collapse{
+            width: 100%;
+            .my-lg-0{
+                margin: 0 auto;
+            }
+            .navbar-nav{
+                li{
+                    a{
+                        text-align: center;
+                        margin-top: 0px!important; 
+                        margin-bottom: 0px!important; 
+                        border: none !important; 
+                    }
+                }
+            }
+        }
+    }
     #banner{
         #banner-text-1{
-            font-size: 20px;
+            font-size: 50px;
         }
     }
-        
-    #fotos-conferencia{
-        #fotos{
-            columns: 2;
-        }
-    }
-        
 }
-@media screen and (max-width: 1080px){
-    #mensagem-dcf{
+@media (min-width: 960px) and (max-width: 1280px) { 
+    .navbar-brand{
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 1rem;
+    }
+    .navbar-expand-lg{
+        flex-flow: column;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1024px) { 
+
+}
+
+@media (max-width: 800px) {
+    #convidados{
+        #palestrantes{
+            columns: 1;
+            .palestrante__perfil {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 959px) {
+    #contagem {
+        padding: 2rem 2rem;
         .row{
-            max-width: 60%;
-            margin: 0 auto;
+            .col{
+                text-align: center !important;
+            }
+        }
+        #contagem-regressiva,#loading-please{
+            margin-bottom: 2rem;
+        }
+        .progress{
+            height: 2rem;
+        }
+        .border-left{
+            border: none !important;
+        }
+    }
+    #detalhes{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        .row .col:nth-child(2){
+            margin-top: 2rem;
+        }
+        iframe{
+            width: 100%;
+        }
+    }
+    #convidados {
+        #palestrantes{
+            columns: 2;
+            text-align: center;
+            .rebeca{
+                margin-top: 20px;
+            }
+        }
+    }
+    #perguntas{
+        margin-top: 2rem;
+        .row{
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}
+@media (max-width: 959px) {
+    #contagem {
+        .border-left{
+            border: none !important;
+        }
+    }
+}
+@media (min-width: 960px) and (max-width: 1023px) {
+    .button-collspace{
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) { 
+   
+    #menu {
+        #navbar{
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) { 
+    
+}
+
+@media (min-width: 1360px) { 
+    #perguntas{
+        .row{
+            max-width: 80%;
         }
     }
 }

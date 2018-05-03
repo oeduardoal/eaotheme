@@ -4,7 +4,7 @@
             <h2 class="font-weight-bold" id="hospedagem-title">HOSPEDAGEM:</h2>
             <small class="border-dcf" id="hospedagem-subtitle">VOCÊ PROCURA: </small>
             <div class="row">
-                <div class="col">
+                <div class="col col-sm-12">
                     <picture>
                         <img class="img-travmor" src="<?php echo assetsurl?>/assets/img/site/travmor.png" alt="">
                     </picture>

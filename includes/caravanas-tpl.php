@@ -1,9 +1,9 @@
 <div id="caravanas" class="container">
     <div class="row">
-        <div class="col text-right">
-                <iframe src="//www.eventbrite.com/tickets-external?eid=43478596653" frameborder=”0″ height=600 width=600” vspace=”0″ hspace=”0″ marginheight=”5″ marginwidth=”5″ scrolling=”auto” allowtransparency=”true”></iframe>
+        <div class="col-sm-12  col-lg-6 text-right">
+                <iframe src="//www.eventbrite.com/tickets-external?eid=43478596653" frameborder=”0″ height=600 style="width: 100%;" vspace=”0″ hspace=”0″ marginheight=”5″ marginwidth=”5″ scrolling=”auto” allowtransparency=”true”></iframe>
         </div>
-        <div class="col text-left ">
+        <div class="col-sm-12 col-lg-6 text-left ">
             <div class="row h-100 align-items-center">
                 <div class="col">
                     <h2 class="border-dcf font-weight-bold ">CARAVANAS:</h2>

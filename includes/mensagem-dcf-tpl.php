@@ -1,6 +1,6 @@
 <section id="mensagem-dcf" class="container-fluid">
-    <div class="row align-items-center scroll-reveal">
-        <div class="col">
+    <div class="row">
+        <div class="col col-lg-12">
             <p>
                 Em meio a incredulidade que toma conta da terra, corrupção, pobreza, violência e mentiras, Deus está levantando uma geração
                 que transforma todas as esferas da sociedade através do amor e do sobrenatural.
