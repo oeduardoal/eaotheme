@@ -53,7 +53,7 @@ $(document).ready(() => {
     scale: 0.9
   };
   sr.reveal("#video", srOptions);
-  sr.reveal("#mensagem-dcf .scroll-reveal > .col", srOptions);
+  sr.reveal("#mensagem-dcf > .row", srOptions);
   sr.reveal("#contagem", srOptions);
   sr.reveal("#detalhes", srOptions);
   sr.reveal("#convidados", srOptions);
