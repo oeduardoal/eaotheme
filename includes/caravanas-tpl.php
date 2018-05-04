@@ -10,7 +10,7 @@
                     <p>
                         Se você e a galera da sua cidade vem em pelo menos 10 pessoas, entre em contato pelo e-mail <strong>contato@diflenfortaleza.com</strong>
                         <br>
-                        Temos um desconto especial para você!
+			Queremos conhecer vocês!
                     </p>
                 </div>
             </div>
