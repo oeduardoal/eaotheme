@@ -28,11 +28,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-item nav-link" href="#">Contato</a>
+                        <a class="nav-item nav-link" href="#contato">Contato</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-item nav-link" href="#">Inscreva-se</a>
+                        <a class="nav-item nav-link" target="_new" href="https://eventbrite.com.br/e/diflen-conference-fortaleza-2018-tickets-43478596653">Inscreva-se</a>
                     </li>
                 </ul>
             </div>
