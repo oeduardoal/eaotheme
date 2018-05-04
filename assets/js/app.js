@@ -91,7 +91,7 @@ $(document).ready(() => {
     loop: true,
     autoplay: true,
     autoplayTimeout: 6000,
-    dots: true
+    dots: true,
   });
 
   let instance = new TypeIt("#banner-text-1 span", {

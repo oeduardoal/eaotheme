@@ -52,6 +52,22 @@
 }
 
 @media (max-width: 959px) {
+    #caravanas{
+        iframe{
+            margin-bottom: 2rem;
+        }
+    }
+    #detalhes-title{
+        margin-top: 2rem;
+    }
+    .progress{
+        margin-top: 2rem;
+    }
+    #video{
+        iframe{
+            height: 50vh!important;
+        }
+    }
     #contagem {
         padding: 2rem 2rem;
         .row{
@@ -111,11 +127,6 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) { 
-   
-    #menu {
-        #navbar{
-        }
-    }
 }
 
 @media (min-width: 1280px) and (max-width: 1365px) { 
@@ -123,6 +134,11 @@
 }
 
 @media (min-width: 1360px) { 
+    #hospedagem{
+        .img-travmor{
+            width: 50vw;
+        }
+    }
     #perguntas{
         .row{
             max-width: 80%;

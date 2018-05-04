@@ -12,7 +12,7 @@
                 <div class="row">
                     <?php for ($i=1 ; $i < 11; $i++): ?>
                     <div class="col-sm-12 col-md-2 col-lg-3 ">
-                        <img class="" src="<?php echo assetsurl . " /assets/img/site/" . $i . ".png "; ?>">
+                        <img class="" src="<?php echo assetsurl."/assets/img/site/".$i.".png "; ?>">
                     </div>
                     <?php endfor; ?>
                 </div>
