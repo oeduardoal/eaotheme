@@ -14,7 +14,7 @@
                 <?php
                     $palestrantes = array(
                         1 => array("class" => "andre"),
-                        6 => array("class" => "rebeca"),
+                        // 6 => array("class" => "rebeca"),
                         2 => array("class" => "luma"),
                         7 => array("class" => "alisio"),
                         3 => array("class" => "lipao"),
