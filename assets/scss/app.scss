@@ -1,331 +1,138 @@
-@import '~bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/bootstrap.scss";
+
 @font-face {
-    font-family: "Blanka";
-    src: url("../fonts/Blanka-Regular.otf") format("opentype");
-}
-@font-face {
-    font-family: "DINPro";
-    src: url("../fonts/DINPro.otf") format("opentype");
+  font-family: "FuturaPT Demi";
+  src: url("../fonts/FuturaPTDemi.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "DINPro Black";
-    src: url("../fonts/DINPro-Black.otf") format("opentype");
-}
-$fa-font-path: "~font-awesome/fonts";
-@import '~font-awesome/scss/font-awesome.scss';
-$cinza: #747474;
-$cinza-claro: #757575;
-$verde-claro: #00FF79;
-html{
-    background: url('../img/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height:100%;
-    min-height:100%;
-}
-body{
-    background: transparent;
-    min-height: 100%;
+  font-family: "FuturaPT Heavy";
+  src: url("../fonts/FuturaPTHeavy.otf") format("opentype");
 }
 
-header{
-    padding-top: 2rem;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-    .border-dcf{
-        border-bottom: solid #00FF79 3px;
-    }
-    #menu{
-        max-width: 1400px;
-        .logo img{  
-            padding-top: 7px;
-            width: 10rem;
-        }
-        
-        .navbar-nav{
-            li{
-                a{
-                    padding: 2rem 2rem;
-                    text-transform: uppercase;
-                    color: #747474;
-                    transition: all .1s ease-in;
-                    &:hover{
-                        text-decoration: none;
-                        color: #00FF79;
-                    }
-                }
-                &:nth-child(2n+1) {
-                    a{
-                        border-top: solid 8px #00FF79;
-                        transition: all .1s linear;
-                        &:hover{
-                            color: #00FF79;
-                        }
-                    }
-                    
-                }
-                &:nth-child(2n+2) {
-                    a{
-                        margin-top: 10px;
-                        border-bottom: solid #00FF79 8px;
-                    }
-                }
-            }
-            
-        }
-    }
-    #banner{
-        margin-top: .6rem;
-        #banner-text-1{
-            color: #FFF;
-            font-size: 78px;
-            font-family: "DINPro";
-            width: 80%;
-            span{
-                background-color: #00FF79;
-                color: #000;
-            }
-        }
-    }
-    #video{
-        iframe{
-            width: 80%;
-            height: 600px;
-            margin: 0 auto;
-        }
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-    #mensagem-dcf{
-        background: url('../img/site/banner-texto.png') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        min-height:100%;
-        padding: 2rem 0;
-        .row{
-            width: 95%;
-            margin: 0 auto;
-            p{
-                line-height: 2rem;
-                font-family: DINPro;
-                font-size: 20px;
-                color: #FFF;
-            }
-        }
-    }
-    #contagem{
-        padding: 8rem 0rem;
-        padding-bottom: 4rem 0rem;
-        font-family: "DINPro";
-        .border-left{
-            border-left: solid #757575 3px !important;
-        }
-        span{
-            color: #757575;
-        }
-        #contagem-regressiva{
-            span{
-                font-family: "DINPro Black";
-                font-size: 34px;
-            }    
-        }
-        #datahora-evento{
-            span{
-                letter-spacing: 2px;
-                font-size: 37px;
-            }
-        }
-        #loading-please{
-            text-transform: uppercase;
-            font-weight: 400;
-            letter-spacing: 12px;
-            font-size: 22px;
-        }
-        #loading{
-            margin-bottom: 2rem;
-        }
-        .progress-bar{
-            background-color: $verde-claro;
-        }
-    }
-    #detalhes{
-        padding-top: 4rem;
-        padding-bottom: 10rem;
-        font-family: "DINPro";
-        color: #747474;
-        p{
-            font-size: 17px;
-        }
-        #detalhes-title{
-            font-family: "DINPro Black";
-            font-weight: 900;
-            color: #747474;
-        }
-    }
+a,
+a:hover {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+}
 
-    #convidados{
-        color: #747474;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-        #palestrantes{
-            columns: 4;
-            max-width: 80%;
-            margin: 0 auto;
-            margin-top: 5rem;
-            .palestrante__perfil{
-                img{
-                    width: 10rem;
-                }
-                &.andre{
-                    img{
-                        width: 12rem;
-                    }
-                }
-                &.teo{
-                    img{
-                        width: 15rem;
-                    }
-                }
-                &.luma{
-                    img{
-                        width: 12rem;
-                    }
-                }
-                
-                &.rebeca{
-                    img{
-                        margin-top: 20px;
-                        width: 10rem;
-                    }
-                }
-                &.alisio{
-                    img{
-                        width: 12rem;
-                    }
-                }
-            }
+$menuheight: 120px;
+$basemargin: 20px;
+$basepadding: 20px;
+$dark: #231f20;
+.container {
+  max-width: 1200px;
+}
+
+.title-site {
+  font-weight: bold;
+  font-family: "FuturaPT Heavy";
+  font-size: 40px;
+  color: $dark;
+}
+
+body {
+  #main-portfolio {
+    margin-top: 20px;
+  }
+}
+#main-header {
+  position: relative;
+  z-index: 1;
+  font-family: "FuturaPT Demi";
+  background: #000;
+  height: 100px;
+  position: relative;
+  z-index: 99;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(42, 95, 114, 1) 50%,
+    rgba(42, 95, 114, 1) 50%,
+    rgba(42, 95, 114, 0) 100%
+  );
+  margin-top: $menuheight - 100;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  #main-menu {
+    ul {
+      display: flex;
+      list-style: none;
+      flex-direction: row;
+      height: 100%;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #fff;
+          &:hover {
+            color: #fff;
+          }
         }
-        #convidados-title{
-            font-weight: 800;
-            font-family: "DINPro Black";
-        }
-        #convidados-subtitle{
-            font-family: "DINPro";
-            font-size: 22px;
-            letter-spacing: 2px;
-        }
+      }
     }
-    #bandas-title{
-        color: #747474;
-        margin-top: 4rem;
-    }   
-    #bandas{
-        background: url('../img/site/banner-bandas.png') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height:75vh;
-        min-height:100%;
-        margin-top: 5rem;
-        .owl-lazy{
-            width: 20rem;
+  }
+  #main-social {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    ul {
+      display: flex;
+      list-style: none;
+      flex-direction: row;
+      height: 100%;
+      list-style: none;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        a {
+          img {
+          }
         }
-        .owl-carousel.owl-drag .owl-item{
-            text-align: -webkit-center;
-        }
+      }
     }
-    #perguntas{
-        margin-top: 8rem;
-        padding-bottom: 4rem;
-        .row{
-            max-width: 80%;
-            margin: 0 auto;
-        }
-        .item{
-            text-align: center;
-        }
-        color: #747474;
-        #perguntas-title{
-            font-family: "DINPro Black";
-            text-transform: uppercase;
-        }
-        #perguntas-response{
-            margin-top: 1rem;
-            font-family: "DINPro";
-            font-size: 20px;
-        }
-        .first{
-            font-size: 40px;
-            border: none;
-            border-bottom: solid #00FF79 3px;
-            border-block-start-width: 10px
-        }
-    }
-    #caravanas{
-        color: #747474;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-        p{
-            font-size: 20px;
-        }
-    }
-    #hospedagem{
-        padding-top: 8rem;
-        color: #747474;
-        #hospedagem-subtitle{
-            font-size: 20px;
-            letter-spacing: 2px;
-        }
-        .img-travmor{
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            width: 100%;
-        }
-        #lamartine{
-            span{
-                font-size: 20px;
-            }
-        }
-    }
-    #fotos-conferencia{
-        color: #747474;
-        margin-top: 8rem;
-        margin-bottom: 4rem;
-        #fotos{
-            .col-sm-12.col-md-2.col-lg-3{
-                padding: 0px;
-            }
-            margin-top: 4rem;
-            display: inline-block;
-            img{
-                width: 100%;
-            }
-        }
-    }
-    #contato{
-        color: #000;
-        h2{
-            font-family: "DINPro Black";
-        }
-        span{
-            font-size: 20px;
-        }
-        ul{
-            margin: 0px;
-            padding: 0px;
-            margin-top: 10px;
-            li{
-                margin-right: 10px;
-                display: inline-block;
-            }
-            list-style: none;
-        }
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-@import 'mobile';
+  }
+}
+
+#main-banner {
+  margin-top: -$menuheight;
+  .item {
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+  }
+}
+
+#main-portfolio {
+  display: flex;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  a.ver-todos {
+    color: $dark;
+  }
+}
+
+#main-clientes-parceiros {
+  .container {
+  }
+}
+@import "mobile";
