@@ -1,0 +1,21 @@
+#main-sobre {
+  margin-top: 150px;
+  margin-bottom: 70px;
+  display: flex;
+  #container-sobre {
+    background-image: url(../img/logo-canoa-filmes-sobre.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30%;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sobre-text {
+    width: 60%;
+    color: $dark;
+    font-size: $fontSizeText;
+  }
+}

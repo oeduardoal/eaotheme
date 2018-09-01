@@ -15514,7 +15514,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 window.jQuery = window.$ = _jquery2.default;
 
-window.now = new Date();
+// window.now = new Date();
 
 (0, _jquery2.default)(document).ready(function () {
   console.log("Developed by: Eduardo Almeida");
@@ -15539,10 +15539,21 @@ window.now = new Date();
   //   sr.reveal("#caravanas", srOptions);
   //   sr.reveal("#hospedagem", srOptions);
   //   sr.reveal("#fotos-conferencia", srOptions);
+  (0, _jquery2.default)(".grid").masonry({
+    itemSelector: ".grid-item",
+    columnWidth: 160
+  });
 
   (0, _jquery2.default)("#main-banner .owl-carousel").owlCarousel({
     items: 1,
     loop: true
+  });
+  (0, _jquery2.default)("#main-clientes-parceiros .owl-carousel").owlCarousel({
+    items: 5,
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplaySpeed: 500
   });
 });
 
@@ -15585,7 +15596,7 @@ define(String.prototype, "padRight", "".padEnd);
 /* 131 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleNotFoundError: Module not found: Error: Can't resolve '../img/n_de_canoa.svg' in '/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/assets/scss'\n    at factoryCallback (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/webpack/lib/Compilation.js:264:39)\n    at factory (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/webpack/lib/NormalModuleFactory.js:247:20)\n    at resolver (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/webpack/lib/NormalModuleFactory.js:65:21)\n    at asyncLib.parallel (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/webpack/lib/NormalModuleFactory.js:138:21)\n    at /Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/webpack/node_modules/async/dist/async.js:3888:9\n    at /Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/webpack/node_modules/async/dist/async.js:473:16\n    at iteratorCallback (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/webpack/node_modules/async/dist/async.js:1062:13)\n    at /Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/webpack/node_modules/async/dist/async.js:969:16\n    at /Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/webpack/node_modules/async/dist/async.js:3885:13\n    at resolvers.normal.resolve (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/webpack/lib/NormalModuleFactory.js:130:23)\n    at onError (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/Resolver.js:65:10)\n    at loggingCallbackWrapper (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/tapable/lib/Tapable.js:252:11)\n    at /Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js:40:4\n    at loggingCallbackWrapper (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/tapable/lib/Tapable.js:252:11)\n    at innerCallback (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/Resolver.js:144:11)\n    at loggingCallbackWrapper (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/tapable/lib/Tapable.js:249:35)\n    at resolver.doResolve.createInnerCallback (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:44:6)\n    at loggingCallbackWrapper (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at afterInnerCallback (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/Resolver.js:168:10)\n    at loggingCallbackWrapper (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/eduardo/projects/CanoaFilmes/canoafilmes.com.br/wp-content/themes/canoafilmes/node_modules/tapable/lib/Tapable.js:252:11)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 132 */

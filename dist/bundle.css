@@ -6327,6 +6327,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 a,
 a:hover {
+  color: #231f20;
   text-decoration: none; }
 
 input,
@@ -6342,8 +6343,13 @@ button {
   font-size: 40px;
   color: #231f20; }
 
-body #main-portfolio {
-  margin-top: 20px; }
+.ver-todos,
+.ver-todos:hover {
+  color: #231f20;
+  font-size: 20px; }
+
+body {
+  background-color: #eff4f4; }
 
 #main-header {
   position: relative;
@@ -6391,17 +6397,217 @@ body #main-portfolio {
         align-items: center;
         margin-right: 20px; }
 
-#main-banner {
+body #main-banner,
+body.home #main-banner {
   margin-top: -120px; }
-  #main-banner .item {
+  body #main-banner .item,
+  body.home #main-banner .item {
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 100vh;
     display: flex; }
 
+body.page #main-banner .item {
+  height: 40vh; }
+
 #main-portfolio {
-  display: flex; }
+  margin-top: 20px;
+  display: flex;
+  /* ---- grid ---- */
+  /* clearfix */
+  /* ---- grid-item ---- */
+  /* ---- static-banner ---- */ }
   #main-portfolio .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between; }
-  #main-portfolio a.ver-todos {
+  #main-portfolio #portfolio-container .portfolio-item img {
+    max-width: 100%; }
+  #main-portfolio .grid {
+    width: 100%; }
+  #main-portfolio .grid:after {
+    content: "";
+    display: block;
+    clear: both; }
+  #main-portfolio .grid-item {
+    width: 160px;
+    height: 120px;
+    float: left;
+    background: #d26;
+    border: 2px solid #333;
+    border-color: rgba(0, 0, 0, 0.5); }
+  #main-portfolio .grid-item--width2 {
+    width: 320px; }
+  #main-portfolio .grid-item--width3 {
+    width: 480px; }
+  #main-portfolio .grid-item--width4 {
+    width: 720px; }
+  #main-portfolio .grid-item--height2 {
+    height: 200px; }
+  #main-portfolio .grid-item--height3 {
+    height: 260px; }
+  #main-portfolio .grid-item--height4 {
+    height: 360px; }
+  #main-portfolio .static-banner {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px 30px;
+    color: white;
+    background: #a2c;
+    font-size: 22px;
+    z-index: 2;
+    /* above items */ }
+
+#main-clientes-parceiros {
+  display: flex;
+  margin-top: 200px;
+  background-image: url(imgs/logo-n.d3146a1b.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  #main-clientes-parceiros #container-clientes-parceiros.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 340px; }
+  #main-clientes-parceiros .ver-todos {
+    text-align: right; }
+  #main-clientes-parceiros .owl-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+#main-sobre {
+  margin-top: 150px;
+  margin-bottom: 70px;
+  display: flex; }
+  #main-sobre #container-sobre {
+    background-image: url(imgs/logo-canoa-filmes-sobre.9e73a2c4.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30%;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #main-sobre .sobre-text {
+    width: 60%;
+    color: #231f20;
+    font-size: 20px; }
+
+#main-contato {
+  display: flex;
+  margin-top: 200px; }
+  #main-contato .title-site {
+    text-align: center; }
+  #main-contato .sub-contato {
+    display: flex;
+    flex-grow: 0;
+    justify-content: space-between; }
+  #main-contato .social-contatos {
+    flex: 1;
+    display: flex;
+    padding-left: 40px;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 30px; }
+    #main-contato .social-contatos ul {
+      list-style: none; }
+      #main-contato .social-contatos ul li {
+        margin-top: 20px; }
+  #main-contato #form-contato {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    #main-contato #form-contato h6 {
+      font-weight: 500;
+      color: #231f20;
+      font-size: 20px;
+      padding-left: 20px; }
+    #main-contato #form-contato input {
+      margin-top: 20px; }
+    #main-contato #form-contato textarea {
+      height: 348px; }
+    #main-contato #form-contato input,
+    #main-contato #form-contato textarea {
+      border: none;
+      background: #fff;
+      outline: none;
+      width: 100%;
+      border-radius: 40px;
+      color: #009bb6;
+      padding: 20px;
+      z-index: 0; }
+      #main-contato #form-contato input::placeholder,
+      #main-contato #form-contato textarea::placeholder {
+        color: #009bb6;
+        opacity: 0.2; }
+    #main-contato #form-contato button {
+      outline: none;
+      cursor: pointer;
+      margin-top: 20px;
+      color: #fff;
+      background-color: #295e71;
+      font-weight: bold;
+      padding: 20px;
+      border-radius: 40px;
+      width: 100%;
+      display: block;
+      border: none; }
+    #main-contato #form-contato .textarea-button {
+      padding: 20px;
+      margin-top: 20px;
+      width: 100%;
+      flex: 1;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+      background-color: #fff; }
+
+#main-footer {
+  min-height: 350px;
+  max-width: 100%;
+  background-color: #295e71;
+  margin-top: -200px;
+  display: flex;
+  align-items: center; }
+  #main-footer .container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%; }
+  #main-footer .footer-logo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 47%;
+    min-width: 40%;
+    align-items: center; }
+  #main-footer .copyright {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #main-footer .copyright span {
+      color: #ffffff; }
+
+#main-breadcrumbs {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  #main-breadcrumbs .breadcrumbs {
+    text-transform: uppercase;
+    font-family: "FuturaPT Heavy";
+    font-weight: 400;
     color: #231f20; }
+    #main-breadcrumbs .breadcrumbs span {
+      font-size: 20px; }
+
+#page-container {
+  margin-top: 20px;
+  margin-bottom: 20px; }

@@ -1,0 +1,58 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+@font-face {
+  font-family: "FuturaPT Demi";
+  src: url("../fonts/FuturaPTDemi.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "FuturaPT Heavy";
+  src: url("../fonts/FuturaPTHeavy.otf") format("opentype");
+}
+
+$menuheight: 120px;
+$basemargin: 20px;
+$basepadding: 20px;
+
+$primary: #009bb6;
+$primaryDark: #295e71;
+$dark: #231f20;
+
+$fontSizeTitle: 40px;
+$fontSizeText: 20px;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a,
+a:hover {
+  color: $dark;
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.title-site {
+  font-weight: bold;
+  font-family: "FuturaPT Heavy";
+  font-size: 40px;
+  color: $dark;
+}
+
+.ver-todos,
+.ver-todos:hover {
+  color: $dark;
+  font-size: $fontSizeText;
+}
+
+body {
+  background-color: #eff4f4;
+}

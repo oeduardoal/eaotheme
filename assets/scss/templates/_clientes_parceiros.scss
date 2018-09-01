@@ -1,0 +1,26 @@
+#main-clientes-parceiros {
+  display: flex;
+  margin-top: 200px;
+  #container-clientes-parceiros.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 340px;
+  }
+  background-image: url(../img/logo-n.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .clientes {
+    .cliente {
+    }
+  }
+  .ver-todos {
+    text-align: right;
+  }
+  .owl-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

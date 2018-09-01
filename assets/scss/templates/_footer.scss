@@ -1,0 +1,32 @@
+#main-footer {
+  min-height: 350px;
+  max-width: 100%;
+  background-color: $primaryDark;
+  margin-top: -200px;
+  display: flex;
+  align-items: center;
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  .footer-logo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 47%;
+    min-width: 40%;
+    align-items: center;
+  }
+  .copyright {
+    margin-top: $basemargin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: #ffffff;
+    }
+  }
+}

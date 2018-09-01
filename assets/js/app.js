@@ -5,7 +5,7 @@ import ScrollReveal from "scrollreveal";
 import Tether from "tether";
 import Popper from "popper.js";
 import bootstrap from "bootstrap";
-window.now = new Date();
+// window.now = new Date();
 
 $(document).ready(() => {
   console.log("Developed by: Eduardo Almeida");
@@ -30,9 +30,20 @@ $(document).ready(() => {
   //   sr.reveal("#caravanas", srOptions);
   //   sr.reveal("#hospedagem", srOptions);
   //   sr.reveal("#fotos-conferencia", srOptions);
+  $(".grid").masonry({
+    itemSelector: ".grid-item",
+    columnWidth: 160
+  });
 
   $("#main-banner .owl-carousel").owlCarousel({
     items: 1,
     loop: true
+  });
+  $("#main-clientes-parceiros .owl-carousel").owlCarousel({
+    items: 5,
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplaySpeed: 500
   });
 });

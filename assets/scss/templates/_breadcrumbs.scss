@@ -1,0 +1,17 @@
+#main-breadcrumbs {
+  margin-top: $basemargin * 2;
+  margin-bottom: $basemargin * 2;
+  .container {
+  }
+  .breadcrumbs {
+    text-transform: uppercase;
+    font-family: "FuturaPT Heavy";
+    font-weight: 400;
+    color: $dark;
+    span {
+      font-size: 20px;
+    }
+    h2 {
+    }
+  }
+}

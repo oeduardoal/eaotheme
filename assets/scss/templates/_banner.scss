@@ -1,0 +1,18 @@
+body,
+body.home {
+  #main-banner {
+    margin-top: -$menuheight;
+    .item {
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+    }
+  }
+}
+body.page {
+  #main-banner {
+    .item {
+      height: 40vh;
+    }
+  }
+}
