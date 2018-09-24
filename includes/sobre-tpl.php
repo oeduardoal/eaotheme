@@ -10,6 +10,7 @@
                 echo $page->post_content;
             ?>
             </p>
+            <a href="<?php echo get_the_permalink(42); ?>">Conheça nossa equipe!</a>
         </div>
     </div>
 </section>

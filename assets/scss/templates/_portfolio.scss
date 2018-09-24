@@ -1,73 +1,94 @@
 #main-portfolio {
-  margin-top: 20px;
-  display: flex;
+  margin-top: 100px;
   .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  #portfolio-container {
-    .portfolio {
-    }
-    .portfolio-item {
-      img {
-        max-width: 100%;
-      }
+    .ver-todos,
+    .ver-todos:hover {
+      text-align: right;
+      margin-top: $basemargin * 2;
     }
   }
-  /* ---- grid ---- */
-  .grid {
+  .masonry {
+    display: flex;
     width: 100%;
   }
-
-  /* clearfix */
-  .grid:after {
-    content: "";
-    display: block;
-    clear: both;
+  .masonry--h {
+    flex-flow: row wrap;
   }
-
-  /* ---- grid-item ---- */
-
-  .grid-item {
-    width: 160px;
-    height: 120px;
-    float: left;
-    background: #d26;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
+  .masonry--h,
+  .masonry--v {
+    margin-left: 0px;
+    counter-reset: brick;
   }
-
-  .grid-item--width2 {
-    width: 320px;
-  }
-  .grid-item--width3 {
-    width: 480px;
-  }
-  .grid-item--width4 {
-    width: 720px;
-  }
-
-  .grid-item--height2 {
-    height: 200px;
-  }
-  .grid-item--height3 {
-    height: 260px;
-  }
-  .grid-item--height4 {
-    height: 360px;
-  }
-
-  /* ---- static-banner ---- */
-
-  .static-banner {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    padding: 10px 30px;
+  .masonry-brick {
+    overflow: hidden;
+    border-radius: 0px;
+    margin: 0 0 0px 0px;
+    background-color: #333;
     color: white;
-    background: #a2c;
-    font-size: 22px;
-    z-index: 2; /* above items */
+    position: relative;
   }
+  .masonry-brick--h {
+    flex: auto;
+    height: 250px;
+    min-width: 150px;
+  }
+  .masonry-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+  }
+  [class^="imghvr-"] a,
+  [class*=" imghvr-"] a {
+    padding: 40px;
+    color: #fff;
+  }
+  @media only screen and (min-width: 1024px) {
+    .masonry-brick--h:nth-child(4n + 1) {
+      width: 250px;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .masonry-brick--h:nth-child(4n + 2) {
+      width: 325px;
+    }
+  }
+}
+.basicLightbox .basicLightbox__placeholder .c-modal {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  .c-frame {
+    flex: 1;
+  }
+  .c-type {
+    flex: 1;
+    padding: $basepadding;
+    color: #ccc;
+    h3 {
+      color: #fff;
+    }
+    a,
+    a:hover {
+      margin-top: $basemargin;
+      color: #fff;
+    }
+  }
+}
+.basicLightbox:after {
+  content: "";
+  position: absolute;
+  top: 1.8rem;
+  right: 1.8rem;
+  width: 2em;
+  height: 2em;
+  background: url(/wp-content/themes/canoafilmes/assets/img/close.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }

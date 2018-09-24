@@ -17,5 +17,9 @@
     width: 60%;
     color: $dark;
     font-size: $fontSizeText;
+    a {
+      color: $dark;
+      margin-top: $basemargin;
+    }
   }
 }

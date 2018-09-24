@@ -9,10 +9,34 @@ body.home {
     }
   }
 }
-body.page {
+body.page,
+body.single,
+body.archive {
   #main-banner {
     .item {
       height: 40vh;
+      background-size: 100%;
+    }
+    #main-breadcrumbs {
+      width: 100%;
+      .breadcrumbs {
+        margin-top: $basepadding * 2;
+        color: #fff;
+        a {
+          color: #fff;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+body.single {
+  #main-banner {
+    .item {
+      min-height: 50vh;
     }
   }
 }

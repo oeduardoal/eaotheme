@@ -1,0 +1,20 @@
+#menu-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  li {
+    padding-right: 10px;
+    a {
+      transition: all 0.1s ease-in-out;
+      font-size: 17px;
+      font-family: "FuturaPT Heavy";
+      padding: 2px;
+      color: #0000008a;
+    }
+    a:hover {
+      background: $dark;
+      color: #eff4f4;
+    }
+    list-style-type: none;
+  }
+}

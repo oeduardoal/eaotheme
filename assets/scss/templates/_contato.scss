@@ -24,6 +24,15 @@
         margin-top: $basemargin;
       }
     }
+    .mapa {
+      width: 100%;
+      text-align: center;
+      height: 100%;
+      iframe {
+        width: 95%;
+        height: 400px;
+      }
+    }
   }
   #form-contato {
     display: flex;
@@ -32,6 +41,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    div.wpcf7 {
+      width: 100%;
+    }
     h6 {
       font-weight: 500;
       color: $dark;
@@ -59,7 +71,7 @@
         opacity: 0.2;
       }
     }
-    button {
+    input#button-enviar {
       outline: none;
       cursor: pointer;
       margin-top: $basepadding;
@@ -85,6 +97,7 @@
       border-bottom-right-radius: 40px;
       border-bottom-left-radius: 40px;
       background-color: #fff;
+      padding-bottom: 0px;
     }
   }
 }

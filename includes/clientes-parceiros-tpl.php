@@ -13,8 +13,6 @@
                 </div>
             <?php endwhile; wp_reset_query(); ?>
         </div>
-        <a href="<?php echo get_permalink( get_page_by_title( 'Clientes e parceiros' ) ) ?>" class="ver-todos theme-switcher">
-            VER TODOS
-        </a>
+       
     </div>
 </section>

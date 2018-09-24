@@ -1,4 +1,6 @@
 @import "reset";
+@import "~basicLightbox/dist/basicLightbox.min.css";
+@import "./hovercss/scss/imagehover.scss";
 @import "templates/header";
 @import "templates/banner";
 @import "templates/portfolio";
@@ -7,5 +9,85 @@
 @import "templates/contato";
 @import "templates/footer";
 @import "templates/breadcrumbs";
+@import "templates/categories";
 @import "templates/page";
 @import "mobile";
+
+@media screen and (max-width: 1000px) {
+  #main-footer {
+    margin-top: $basemargin;
+    .footer-logo {
+      max-width: 100%;
+      .logo {
+        width: 95%;
+      }
+      svg {
+        max-width: 95%;
+      }
+    }
+  }
+  #menu-categories {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  #main-header {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  #main-social {
+    svg {
+      width: 30px;
+    }
+  }
+  #main-sobre #container-sobre {
+    background: none;
+  }
+  #main-sobre .sobre-text {
+    width: 100%;
+  }
+  #main-contato .social-contatos {
+    padding-left: 0px;
+  }
+  #main-contato .social-contatos ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  #main-contato .social-contatos {
+    flex-direction: column;
+  }
+  #main-contato .social-contatos .mapa {
+    margin-bottom: 20px;
+  }
+  #main-contato .sub-contato {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main-header #main-menu ul {
+    flex-direction: column;
+  }
+  body #main-banner .item,
+  body.home #main-banner .item {
+    height: 50vh;
+  }
+  body.page-id-42 {
+    #page-container {
+      .container {
+        flex-direction: column;
+      }
+      #main-pontos-fortes {
+        width: 100%;
+      }
+      #main-equipe {
+        width: 100%;
+      }
+    }
+  }
+}

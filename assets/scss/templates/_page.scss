@@ -4,3 +4,111 @@
   .container {
   }
 }
+
+// Sobre
+body.page-id-42 {
+  #page-container {
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+    #main-pontos-fortes {
+      width: 60%;
+      color: $dark;
+      font-family: "FuturaPT Demi";
+      .ponto-forte {
+        margin-bottom: $basemargin * 2;
+        h4 {
+          text-transform: uppercase;
+        }
+        p {
+        }
+      }
+    }
+    #main-equipe {
+      width: 40%;
+      text-align: center;
+      h3 {
+        margin-bottom: $basemargin;
+      }
+      .equipe-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: $basemargin * 2;
+        img {
+          border-radius: 50%;
+          max-width: 200px;
+        }
+        span.equipe-item-name {
+          font-size: 23px;
+          margin-top: $basemargin;
+        }
+        span.equipe-item-cargo {
+          font-weight: bold;
+          font-size: 10px;
+          color: #231f20;
+        }
+      }
+    }
+  }
+  #main-contato {
+    margin-top: 20px;
+  }
+}
+
+/*
+  Clientes e Parceiros
+*/
+body.page-id-2524 {
+  #page-clientes-parceiros {
+    background-image: url(../img/logo-n.png);
+    // background-repeat: repeat-y;
+    background-position: center;
+    background-size: 55%;
+  }
+  #page-container {
+    #main-clientes-parceiros {
+      margin-top: 0px;
+      background: none;
+    }
+  }
+  #main-breadcrumbs {
+    margin-top: 0px;
+    padding-top: $basepadding * 2;
+  }
+  #main-contato {
+    margin-top: 0px;
+  }
+}
+
+body.single {
+  #page-portfolio {
+    .container {
+      display: flex;
+      flex-direction: row;
+
+      #single-portfolio-video {
+        flex: 1;
+        margin-top: $basemargin;
+        iframe {
+          width: 100%;
+        }
+      }
+      #single-portfolio-descricao {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: $basepadding;
+        p {
+          color: $dark;
+          font-family: "FuturaPT Demi";
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
