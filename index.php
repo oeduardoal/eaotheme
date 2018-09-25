@@ -1,4 +1,3 @@
-eduardoooo
 <?php get_header(); ?>
 <?php
     get_template_part( "includes/header", "tpl" );
